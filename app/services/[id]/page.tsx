@@ -93,7 +93,7 @@ const Page = () => {
                                     </div>
                                 </div>
                                 {services[0].servicesInclude.map((serv, index) => (
-                                    <div className="row">
+                                    <div className="row" key={index}>
                                         <div className="col-md-12" key={index}>
                                             <div className="whychoose-wrap p-0">
                                                 <i className="fas " style={{ paddingRight: "10px" }}><FaCheckDouble /></i>

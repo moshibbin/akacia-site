@@ -21,7 +21,7 @@ const page = () => {
                     </div>
                     <div className="col-md-4">
                         <div className="contact-box">
-                            <p>Get in touch with us for any inquiries or to schedule your appointment. We're here to assist you and ensure your experience at our clinic is exceptional.</p>
+                            <p>Get in touch with us for any inquiries or to schedule your appointment. We&lsquo;re here to assist you and ensure your experience at our clinic is exceptional.</p>
                             <hr />
                             <div className="contact-title">
                                 <h4>Contact Information</h4>

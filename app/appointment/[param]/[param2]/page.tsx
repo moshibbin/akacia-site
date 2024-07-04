@@ -108,7 +108,7 @@ const Page = () => {
                     <Modal.Title>Booking Confirmation & Next Steps</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Dear Client,
-                    Thank you for your booking! Your details have been successfully recorded and sent to your WhatsApp. Please review the information and click the "Send" button to submit your appointment request through WhatsApp</Modal.Body>
+                    Thank you for your booking! Your details have been successfully recorded and sent to your WhatsApp. Please review the information and click the &quot;Send&quot; button to submit your appointment request through WhatsApp</Modal.Body>
                 <Modal.Footer>
 
                     <Button variant="success" onClick={handleClose}>

@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                                 Emergency?<br /> Contact Us.
                             </h2>
                             <p>
-                                We're here to help with any questions you may have. Feel free to reach out to us through the following channels:
+                                We&lsquo;re here to help with any questions you may have. Feel free to reach out to us through the following channels:
                             </p>
                             <div className="why-choose_list">
                                 <div className="choose-icon">
