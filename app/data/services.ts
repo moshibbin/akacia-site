@@ -1,13 +1,11 @@
 interface ServicesType {
     id: number,
     name: string,
-
     description: string,
     image: string,
     icon: string,
     icon2: string,
     bg: string,
-    // bg-color:string,
     servicesInclude: { name: string, description: string, icon: string }[]
 }
 export const servicesList: ServicesType[] = [

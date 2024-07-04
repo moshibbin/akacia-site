@@ -6,7 +6,7 @@ import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { IoMailUnread } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
-import { servicesList } from "../data/services";
+import { servicesList } from "../data/services2";
 const Footer = () => {
     return (
         <footer>
@@ -65,13 +65,21 @@ const Footer = () => {
                                 ))}
 
                             </ul>
+                            <ul>
+                                {servicesList.slice(0, 5).map(serv => (
+                                    <li key={serv.id}>
+                                        <Link style={{ textDecoration: "none" }} href={`/services/${serv.id}`}><i ><FaAngleDoubleRight /></i>{serv.name}</Link>
+                                    </li>
+                                ))}
+
+                            </ul>
                         </div>
                     </div>
                     <div className="col-md-4 col-lg-2 offset-lg-1">
                         <div className="foot-link-box footlink-box_btn">
-                            <a href="#" className="btn btn-outline-success btn-pr">Find a Doctor</a>
-                            <a href="#" className="btn btn-outline-success btn-pr">Career</a>
-                            <a href="#" className="btn btn-outline-success btn-pr">Newsletter</a>
+                            <a href="#" className="btn btn-outline-success btn-pr">Make Booking</a>
+                            <a href="#" className="btn btn-outline-success btn-pr">Get in touch</a>
+                            <a href="#" className="btn btn-outline-success btn-pr">Contact us</a>
                             <ul className="footer-icons">
                                 <li>
                                     <Link style={{ textDecoration: "none" }} href="#"><i ><CgFacebook /></i></Link>

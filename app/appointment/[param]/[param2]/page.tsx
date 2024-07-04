@@ -5,7 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import SecondHero from "../../../components/seconderHero";
 import { useParams } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { servicesList } from "../../../data/services";
+import { servicesList } from "../../../data/services2";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -52,7 +52,7 @@ const Page = () => {
             date: data.date,
             name: data.name,
             phone: data.phone,
-            city: data.phone,
+            city: data.city,
             service: subService,
         })
         setShow(true)
@@ -105,15 +105,14 @@ const Page = () => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>Booking Confirmation & Next Steps</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>Dear Client,
-                    Thank you for booking with us! We're excited to have you join us for "{subService}" .
-                    If you have any questions or need to make changes to your booking, please don't hesitate to contact us at +123 456 7890.</Modal.Body>
+                    Thank you for your booking! Your details have been successfully recorded and sent to your WhatsApp. Please review the information and click the "Send" button to submit your appointment request through WhatsApp</Modal.Body>
                 <Modal.Footer>
 
                     <Button variant="success" onClick={handleClose}>
-                        Oky
+                        Send
                     </Button>
                 </Modal.Footer>
             </Modal>

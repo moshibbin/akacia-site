@@ -6,7 +6,7 @@ const About = () => {
                 <div className="about-video_block">
                     <div className="row">
                         <div className="col-md-12 col-lg-6">
-                            <a href="https://www.youtube.com/watch?v=pBFQdxA-apI"
+                            <a target="_blank" href="https://www.facebook.com/Akacia.Clinic.Hargeisa/videos/981508777026843"
                                 className="video-play-img popup-youtube">
 
                                 <img src="images/about-img.jpg" className="img-fluid w-100" alt="#" />

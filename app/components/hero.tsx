@@ -15,7 +15,7 @@ const Hero = () => {
                             <p>
                                 Experience the latest in cosmetology and hair restoration. Our expert team is dedicated to helping you look and feel your best with personalized treatments designed to enhance your natural beauty.
                             </p>
-                            <Link href="/services" className="btn btn-primary">Discover Our Services</Link>
+                            <Link href="/services" className="btn btn-dark btn-blue ">Discover Our Services</Link>
                             {/* <a href="https://www.youtube.com/watch?v=pBFQdxA-apI" className="play-btn popup-youtube"><i className="fas fa-play"></i></a> */}
                         </div>
 

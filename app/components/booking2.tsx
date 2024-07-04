@@ -6,6 +6,9 @@ import { IoLocationSharp } from "react-icons/io5";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { servicesList } from "../data/services";
 import { useState } from "react";
+import { Modal, Button } from "react-bootstrap";
+import { useRouter } from 'next/navigation'
+
 type Inputs = {
     name: string,
     date: string,
@@ -14,14 +17,40 @@ type Inputs = {
     services: string
 }
 const Booking2 = () => {
+
+    const [show, setShow] = useState(false);
+    const [data, setData] = useState({
+        date: "2",
+        name: "2",
+        phone: "2",
+        city: "2",
+        service: ""
+    })
+    const router = useRouter();
+
     const form = useForm<Inputs>()
     const { register, handleSubmit, formState: { errors } } = form;
     // const [service, setServices] = useState(false)
 
+    const WHATSAPP_API_URL = 'https://api.whatsapp.com/send';
+    const phoneNumber = '+252653140475'; // Replace with actual phone number
+    const message = ` Client Name: ${data.name} Client Number: ${data.phone}  Client City: ${data.city} Appoitment Date: ${data.date} Select Services: ${data.service}`;
+    const handleClose = () => {
+        setShow(false);
+        router.push(`${WHATSAPP_API_URL}?phone=${phoneNumber}&text=${message}`);
+    };
+    const handleShow = () => setShow(true);
 
 
     const onSubmit: SubmitHandler<Inputs> = (data) => {
-        console.log(data)
+        setData({
+            date: data.date,
+            name: data.name,
+            phone: data.phone,
+            city: data.city,
+            service: data.services,
+        })
+        setShow(true)
 
     }
     return (<>
@@ -162,6 +191,19 @@ const Booking2 = () => {
                     </div>
                 </div>
             </div>
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Booking Confirmation & Next Steps</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Dear Client,
+                    Thank you for your booking! Your details have been successfully recorded and sent to your WhatsApp. Please review the information and click the "Send" button to submit your appointment request through WhatsApp</Modal.Body>
+                <Modal.Footer>
+
+                    <Button variant="success" onClick={handleClose}>
+                        Send
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </section>
     </>);
 }

@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaUser } from "react-icons/fa";
 import SecondHero from "../components/seconderHero";
 import { FaLocationPin } from "react-icons/fa6";
 
@@ -71,43 +71,43 @@ const page = () => {
                                 <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE" />
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="form-group">
+                                        <div className="form-group  mt-1">
                                             <input type="text" className="form-control" name="first name"
                                                 placeholder="First Name" required />
-                                            <i className="far fa-user"></i>
+                                            <i className="far "><FaUser color="gray" /></i>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="form-group">
+                                        <div className="form-group  mt-1 mt-1">
                                             <input type="text" className="form-control" name="last name" placeholder="Last Name"
                                                 required />
-                                            <i className="far fa-user"></i>
+                                            <i className="far "><FaUser color="gray" /></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="form-group">
+                                        <div className="form-group  mt-1">
                                             <input type="email" className="form-control" name="email address"
                                                 placeholder="Your Email" required />
-                                            <i className="far fa-envelope"></i>
+                                            <i className="far "><FaEnvelope color="gray" /></i>
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="form-group">
+                                        <div className="form-group  mt-1">
                                             <input type="number" className="form-control" name="phone number"
                                                 placeholder="Your Phone Number" required />
-                                            <i className="fas fa-phone"></i>
+                                            <i className="fas "></i>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="row">
                                     <div className="col-md-12">
-                                        <div className="form-group textarea-icon">
+                                        <div className="form-group  mt-1 textarea-icon">
                                             <textarea className="form-control" name="message" required
                                                 placeholder="Your Message" id="" ></textarea>
 
-                                            <button type="submit" className="btn btn-dark">BOOK NOW</button>
+                                            <a href="/" type="submit" className="btn btn-dark">Submit</a>
                                         </div>
                                     </div>
                                 </div>

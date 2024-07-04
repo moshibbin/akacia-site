@@ -1,8 +1,10 @@
 import Link from "next/link";
-import { servicesList } from "../data/services";
+import { servicesList } from "../data/services2";
+
+
 
 const Services = () => {
-    const ids = servicesList.map(serv => serv.id)
+
 
     return (<>
         <section className="space light">
@@ -18,14 +20,14 @@ const Services = () => {
                 <div className="row">
                     {servicesList.map((services, index) => (
                         <div className="col-md-4" key={services.id}>
-                            <div className={services.id % 2 === 0 ? `service-block yellow` : "service-block blue blue"} style={{ color: "white" }}>
+                            <div className={index % 2 === 0 ? `service-block yellow` : "service-block  blue"} style={{ color: "white" }}>
                                 {/* <img src={services.icon2} alt="#" /> */}
                                 <div className="number">{index + 1}</div>
                                 <h3 style={{ color: "white" }}>{services.name}</h3>
                                 <p>{services.description.length < 100 ? services.description : services.description.slice(0, 101) + "..."} </p>
                                 <Link href={`/services/${services.id}`} className="btn btn-dark">READ MORE</Link>
                                 <div className="service-bg-icon">
-                                    <img src={services.bg} className="img-fluid" alt="#" />
+                                    <img src="/images/services-bg1.png" className="img-fluid" alt="#" />
                                 </div>
                             </div>
                         </div>
@@ -37,7 +39,7 @@ const Services = () => {
                     <div className="col-md-12">
                         <p className="text-center service-help_link">
                             Contact us for better help and services.
-                            <a href="#">Let’s get started</a>
+                            <Link href="/contact">Let’s get started</Link>
                         </p>
                     </div>
                 </div>

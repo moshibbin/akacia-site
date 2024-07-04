@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { FaCheck, FaCheckDouble, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
-import { servicesList } from "../../data/services";
+import { servicesList } from "../../data/services2";
+import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
 
 const Page = () => {
     const params = useParams<{ id: string }>()
@@ -19,10 +20,10 @@ const Page = () => {
                             <ul>
                                 {servicesList.map(services => (
                                     <li key={services.id}>
-                                        <Link href={`/services/${services.id}`} style={{ textDecoration: "none" }}>
-                                            <img src={services.icon2} alt="#" />
-                                            <span>{services.name}</span>
-                                            <i className="fas fa-arrow-right"></i>
+                                        <Link href={`/services/${services.id}`} style={services.id === parseInt(params.id) ? { textDecoration: "none", background: "#1382BB" } : { textDecoration: "none" }}>
+                                            {/* <img src={services.icon2} alt="#" /> */}
+                                            <span style={services.id === parseInt(params.id) ? { color: "white" } : {}}>{services.name}</span>
+                                            <i className="fas ">{services.id == parseInt(params.id) ? <IoIosArrowDown /> : <IoIosArrowForward />}</i>
                                         </Link>
                                     </li>
                                 ))}
@@ -36,21 +37,22 @@ const Page = () => {
                                 <i className="fas "><FaPhoneAlt /></i>
                                 <div className="contact-title_icon">
                                     <p>Phone</p>
-                                    <h6>+123 456 7890</h6>
+                                    <h6>+252636666782</h6>
                                 </div>
                             </div>
                             <div className="contact-title">
                                 <i className="fas "><FaEnvelope /></i>
                                 <div className="contact-title_icon">
                                     <p>Email</p>
-                                    <h6>info@exaple.com</h6>
+                                    <h6>Info@akaciahrg.com
+                                    </h6>
                                 </div>
                             </div>
                             <div className="contact-title">
                                 <i className="fas "><FaLocationPin /></i>
                                 <div className="contact-title_icon">
                                     <p>Location</p>
-                                    <h6>2663 Lodgeville Road<br /> Minneapolis, Minnesota<br /> 55402, USA</h6>
+                                    <h6> Near  <br />DAHABSHIIL  Gargaar branch,<br /> Hargeisa, Somaliland</h6>
                                 </div>
                             </div>
                         </div>
@@ -58,16 +60,19 @@ const Page = () => {
                             <h4>Downloads</h4>
                             <hr />
                             <div className="contact-title">
-                                <div className="alert alert-success" role="alert">
-                                    <img src="/images/002-pdf.svg" className="img-fluid" alt="#" />
-                                    <p>Our Brouchure</p>
-                                    <span>50kb</span>
-                                </div>
-                                <div className="alert alert-warning" role="alert">
+                                <a target="_blank" href="https://drive.google.com/file/d/1h-8lnE22aLlzBGstnvKQqfy181g_up-G/view?usp=sharing">
+
+                                    <div className="alert alert-success" role="alert">
+                                        <img src="/images/002-pdf.svg" className="img-fluid" alt="#" />
+                                        <p>Our Brouchure</p>
+                                        <span>50kb</span>
+                                    </div>
+                                </a>
+                                {/* <div className="alert alert-warning" role="alert">
                                     <img src="/images/003-doc.svg" className="img-fluid" alt="#" />
                                     <p>Information Sheet</p>
                                     <span>120kb</span>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
@@ -106,8 +111,8 @@ const Page = () => {
 
 
                             </div>
-                            <hr />
-                            <div className="dental-features">
+                            {/* <hr /> */}
+                            {/* <div className="dental-features">
                                 <h3>Medenin Dental Features</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi </p>
                                 <div className="row">
@@ -152,7 +157,7 @@ const Page = () => {
                                         </ul>
                                     </div>
                                 </div>
-                                {/* <hr />
+                                <hr />
                                 <h3>Our Dental Doctors</h3>
                                 <div className="row">
                                     <div className="col-md-4">
@@ -179,8 +184,8 @@ const Page = () => {
                                             <p>SURGEON</p>
                                         </div>
                                     </div>
-                                </div> */}
-                            </div>
+                                </div> 
+                            </div> */}
                         </div>
                     </div>
                 </div>

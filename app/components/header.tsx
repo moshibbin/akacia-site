@@ -47,7 +47,7 @@ const Header = () => {
                                                 </div>
                                             </li>
                                             <li className="appointment-btn">
-                                                <a href="/appointment" className="btn btn-primary">Make Appointment</a>
+                                                <Link href="/appointment" className="btn btn-dark btn-blue ">Make Appointment</Link>
 
                                             </li>
                                         </ul>

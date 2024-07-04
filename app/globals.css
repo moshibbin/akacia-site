@@ -6701,9 +6701,9 @@ a:focus {
 }
 
 .service-block.blue:hover a {
-  background: #1382BB !important;
-  -webkit-box-shadow: 4.5px 7.794px 13px 0px #1382BB;
-  box-shadow: 4.5px 7.794px 13px 0px #1382BB;
+  background: #000 !important;
+  -webkit-box-shadow: 4.5px 7.794px 13px 0px #1c1c1c;
+  box-shadow: 4.5px 7.794px 13px 0px #1c1c1c;
 }
 
 .service-help_link {
@@ -6885,7 +6885,7 @@ a:focus {
   padding: 1.2rem 26px;
 }
 
-.newsletter-subscribe_form a {
+.newsletter-subscribe_form .a {
   position: absolute;
   right: 0;
   top: 0;
@@ -6901,13 +6901,14 @@ a:focus {
   display: grid;
   align-items: center;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
-.newsletter-subscribe_form a:hover {
+.newsletter-subscribe_form .a:hover {
   opacity: 0.8;
 }
 
-.newsletter-subscribe_form a i {
+.newsletter-subscribe_form .a i {
   position: relative;
   color: #fff;
   top: 48%;
@@ -8880,7 +8881,7 @@ CONTACT US
 }
 
 .get-in-touch .form-group input {
-  padding: 24px 14px;
+  padding: 10px 14px;
 }
 
 .get-in-touch .form-group input::-webkit-input-placeholder {
@@ -10140,4 +10141,10 @@ SERVICE DETAIL
   .appointment-form {
     padding: 0 15rem;
   }
+}
+
+.btn-blue {
+  background-color: var(--primary-color);
+  box-shadow: none;
+  border-radius: 2rem;
 }

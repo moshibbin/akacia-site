@@ -1,4 +1,4 @@
-'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header from "./components/header";
@@ -18,10 +18,11 @@ import Counter from "./components/counter";
 import Footer from "./components/footer";
 import { servicesList } from "./data/services";
 import ReactWhatsapp from "react-whatsapp";
+import { getServices } from "./sanity/sanity-utils";
 
-export default function Home() {
-  const ids = servicesList.map(serv => serv.id)
-  console.log(ids)
+export default async function Home() {
+  const services = await getServices();
+  console.log("services")
   return (
     <>
 
@@ -44,6 +45,8 @@ export default function Home() {
       <Testimonail />
       <Conculting />
       <Blogs />
+
+
 
     </>
   );

@@ -51,7 +51,7 @@ const ShortAbout = () => {
                                 <h4>Subscribe to our Newsletter</h4>
                                 <div className="newsletter-subscribe_form">
                                     <input type="text" className="form-control" placeholder="Enter Your Email" />
-                                    <a href="#"><i className=""><FaChevronRight /></i></a>
+                                    <div className="a"><i className=""><FaChevronRight /></i></div>
                                 </div>
                             </div>
                         </div>

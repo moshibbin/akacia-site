@@ -1,14 +1,28 @@
 'use client'
-import { Porduct, productList } from "@/app/data/products";
+import { Porduct, productList } from "../../data/products";;
 import { faMinus, faPlus, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useParams } from "next/navigation";
+import { useRouter } from 'next/navigation'
 import { useState } from "react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 const Page = () => {
+
     const params = useParams<{ id: string }>();
     const [count, setCount] = useState(1)
-    const product = productList.filter(item => item.id === parseInt(params.id))
+    const product = productList.filter((item: Porduct) => item.id === parseInt(params.id))
+
+    const router = useRouter()
+
+    const WHATSAPP_API_URL = 'https://api.whatsapp.com/send';
+    const phoneNumber = '+252653140475'; // Replace with actual phone number
+    const message = ` Porudct Name: ${product[0].name} Product Description: ${product[0].description} product Quantity: ${count}`;
+
+    const handleSend = () => {
+        router.push(`${WHATSAPP_API_URL}?phone=${phoneNumber}&text=${message}`);
+    };
     return (<>
         <div className="container container-custom"> <div className="service-detail_wrap">
 
@@ -43,7 +57,7 @@ const Page = () => {
                                 </div>
                             </div>
                         </div>
-                        <button className="btn btn-cart">Get Now</button>
+                        <button onClick={handleSend} className="btn btn-cart">Get Now <FaWhatsapp /></button>
                     </div>
                 </div>
             </div>

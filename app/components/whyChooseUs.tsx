@@ -5,6 +5,7 @@ import { FaUserDoctor } from "react-icons/fa6";
 import { BiSupport } from "react-icons/bi";
 import { RiEmotionHappyFill } from "react-icons/ri";
 import { GiClick } from "react-icons/gi";
+import Link from "next/link";
 const WhyChooseUs = () => {
     return (<>
         <section className=" space why-choose-block" >
@@ -80,7 +81,7 @@ const WhyChooseUs = () => {
                         < hr />
                         <div className="row">
                             <div className="col-md-12">
-                                <a href="#" className="btn btn-dark" >MAKE APPOINTMENT</a>
+                                <Link href="/appoitment" className="btn btn-dark" >MAKE APPOINTMENT</Link>
                             </div>
                         </div>
                     </div>
@@ -99,7 +100,7 @@ const WhyChooseUs = () => {
 
                                 <div className="why-choose_list-content">
                                     <span>Call us now</span>
-                                    <h3>+123 456 7890</h3>
+                                    <h3>+252636666782</h3>
                                 </div>
                             </div>
                             <div className="why-choose_list">
@@ -108,7 +109,8 @@ const WhyChooseUs = () => {
                                 </div>
                                 <div className="why-choose_list-content">
                                     <span>Mail us</span>
-                                    <h3>info@medenin.com</h3>
+                                    <h3>Info@akaciahrg.com
+                                    </h3>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { servicesList } from "../data/services";
+import { servicesList } from "../data/services2";
 
 const Services2 = () => {
 
