@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Conculting = () => {
     return (<>
-        <section className="bg-img3" style={{ marginTop: "6rem" }}>
+        <section className="bg-img3" style={{ marginBottom: "6rem" }}>
             <div className="container container-custom">
                 <div className="row">
                     <div className="col-lg-5 offset-lg-7">

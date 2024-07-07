@@ -1,7 +1,7 @@
 import { AiFillTikTok } from "react-icons/ai";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { CgFacebook } from "react-icons/cg";
-import { FaAngleDoubleRight, FaTwitter } from "react-icons/fa";
+import { FaAngleDoubleRight, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { IoMailUnread } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -77,21 +77,22 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4 col-lg-2 offset-lg-1">
                         <div className="foot-link-box footlink-box_btn">
-                            <a href="#" className="btn btn-outline-success btn-pr">Make Booking</a>
-                            <a href="#" className="btn btn-outline-success btn-pr">Get in touch</a>
-                            <a href="#" className="btn btn-outline-success btn-pr">Contact us</a>
+                            <Link href="/appointment" className="btn btn-outline-success btn-pr">Make Booking</Link>
+                            <Link href="/contact" className="btn btn-outline-success btn-pr">Get in touch</Link>
+                            <Link href="/contact" className="btn btn-outline-success btn-pr">Contact us</Link>
                             <ul className="footer-icons">
                                 <li>
-                                    <Link style={{ textDecoration: "none" }} href="#"><i ><CgFacebook /></i></Link>
+                                    <Link style={{ textDecoration: "none" }} href="https://www.facebook.com/Akacia.Clinic.Hargeisa"><i ><CgFacebook /></i></Link>
+                                </li>
+
+                                <li>
+                                    <Link style={{ textDecoration: "none" }} href="https://www.instagram.com/akacia_cosmetology_and_hair_cl/?igsh=OGQ5ZDc2ODk2ZA%3D%3D"><i ><BiLogoInstagramAlt /></i></Link>
                                 </li>
                                 <li>
-                                    <Link style={{ textDecoration: "none" }} href="#"><i ><FaTwitter /></i></Link>
+                                    <Link style={{ textDecoration: "none" }} href="https://www.tiktok.com/@akaciaclinic?_t=8nn6rzAKwUw&_r=1"><i ><AiFillTikTok /></i></Link>
                                 </li>
                                 <li>
-                                    <Link style={{ textDecoration: "none" }} href="#"><i ><BiLogoInstagramAlt /></i></Link>
-                                </li>
-                                <li>
-                                    <Link style={{ textDecoration: "none" }} href="#"><i ><AiFillTikTok /></i></Link>
+                                    <Link style={{ textDecoration: "none" }} href="https://wa.me/+252636666782"><i ><FaWhatsapp /></i></Link>
                                 </li>
                             </ul>
                         </div>

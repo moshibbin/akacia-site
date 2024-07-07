@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { CgFacebook } from "react-icons/cg";
-import { FaTwitter } from "react-icons/fa";
+import { FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { AiFillTikTok } from "react-icons/ai";
 import { PiShoppingCartFill } from "react-icons/pi";
@@ -13,8 +13,8 @@ const Header = () => {
         { id: 1, label: "Home", href: "/" },
         { id: 2, label: "About", href: "/about" },
         { id: 3, label: "Services", href: "/services" },
-        { id: 3, label: "Pharmacy", href: "/products" },
-        { id: 4, label: "Blogs", href: "/blogs" },
+        { id: 3, label: "Appointment", href: "/appointment" },
+        // { id: 4, label: "Blogs", href: "/blogs" },
         { id: 5, label: "Contact", href: "/contact" },
     ]
     const [open, setOpen] = useState(false)
@@ -83,22 +83,26 @@ const Header = () => {
                                     </ul>
                                     <ul className="nav-icon-wrap nav-icon-wrap-hidden">
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#"><CgFacebook /></a>
+                                            <a className="nav-link" href="https://www.facebook.com/Akacia.Clinic.Hargeisa"><CgFacebook /></a>
+                                        </li>
+
+                                        <li className="nav-item">
+                                            <a className="nav-link" href="https://www.instagram.com/akacia_cosmetology_and_hair_cl/?igsh=OGQ5ZDc2ODk2ZA%3D%3D"><BiLogoInstagramAlt /></a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#"><FaTwitter /></a>
+                                            <a className="nav-link" href="https://www.tiktok.com/@akaciaclinic?_t=8nn6rzAKwUw&_r=1"><AiFillTikTok /></a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#"><BiLogoInstagramAlt /></a>
+                                            <a className="nav-link" href="https://wa.me/+252636666782"><FaWhatsapp /></a>
+                                        </li>
+                                        <li className="nav-item cart-seperadte">
+                                            <a className="nav-link" href="#">
+                                                {/* <PiShoppingCartFill /> */}
+                                                {/* <span>2</span> */}
+                                            </a>
                                         </li>
                                         <li className="nav-item">
-                                            <a className="nav-link" href="#"><AiFillTikTok /></a>
-                                        </li>
-                                        <li className="nav-item cart-seperate">
-                                            <a className="nav-link" href="#"><PiShoppingCartFill /> <span>2</span></a>
-                                        </li>
-                                        <li className="nav-item">
-                                            <a className="nav-link" href="#"><IoMdMenu /></a>
+                                            {/* <a className="nav-link" href="#"><IoMdMenu /></a> */}
                                         </li>
                                     </ul>
                                 </div>

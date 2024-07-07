@@ -5859,7 +5859,7 @@ a:focus {
 }
 
 .banner1 {
-  background: url(/images/hero.jpg) center no-repeat;
+  background: url(/images/hero.webp) center no-repeat;
   background-size: cover;
 }
 
@@ -10147,4 +10147,83 @@ SERVICE DETAIL
   background-color: var(--primary-color);
   box-shadow: none;
   border-radius: 2rem;
+}
+
+.Booking-serv {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 1rem .5rem;
+}
+
+.bok-ser {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+}
+
+.bok-ser .title {}
+
+.bok-ser .bok-icon {
+  background-color: var(--primary-color);
+  color: white;
+  padding: .4rem 1rem;
+  width: fit-content;
+  height: fit-content;
+  font-size: 1.5rem;
+}
+
+.bok-ser .status {
+  /* display: flex; */
+
+}
+
+.status p {
+  margin: 0;
+
+}
+
+.stas {
+  border: 1px dashed #009688;
+  color: #009688;
+  padding: 0 .3rem;
+  border-radius: 2px;
+  width: fit-content;
+  height: fit-content;
+  margin-left: 1rem;
+
+}
+
+.serv-btn {
+  background-color: var(--primary-color);
+  color: white;
+  width: 100%;
+  border-radius: 2px;
+  /* border: 1px solid var(--primary-color);
+  color: var(--primary-color); */
+}
+
+.serv-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.bok-header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.cetg p {
+  margin: .2rem;
+}
+
+.cetg {
+  display: flex;
+}
+
+@media (max-width: 570px) {
+  .Booking-serv {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    ;
+  }
 }

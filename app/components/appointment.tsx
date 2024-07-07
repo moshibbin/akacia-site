@@ -10,6 +10,7 @@ import services from "./services2";
 import { useState } from "react";
 import { Collapse } from 'react-bootstrap';
 import Pagination from "./pagination";
+import { LiaGetPocket } from "react-icons/lia";
 const Appointment = () => {
 
 
@@ -17,7 +18,7 @@ const Appointment = () => {
 
     const services = servicesList.filter(serv => serv.id === open);
 
-    const itemsPerPage = 4;
+    const itemsPerPage = 6;
     const items = services[0].servicesInclude;
     const [currentPage, setCurrentPage] = useState(1);
 
@@ -88,7 +89,7 @@ const Appointment = () => {
                                 <h4>Downloads</h4>
                                 <hr />
                                 <div className="contact-title">
-                                    <a target="_blank" href="https://drive.google.com/file/d/1h-8lnE22aLlzBGstnvKQqfy181g_up-G/view?usp=sharing">
+                                    <a target="_blank" href="https://drive.google.com/file/d/15AEJUuS534OVBucPH0tHsGAGGBKy9ZYR/view?usp=sharing">
 
                                         <div className="alert alert-success" role="alert">
                                             <img src="/images/002-pdf.svg" className="img-fluid" alt="#" />
@@ -122,23 +123,31 @@ const Appointment = () => {
                                         </div>
                                     </div>
 
-                                    <div className="appoitment">
+                                    <div className="Booking-serv">
                                         {currentItems.map((serv, index) => (
-                                            <div className=" mb-3 mb-sm-0 " key={index}>
-                                                <div className="card">
-                                                    <div className="card-body">
-                                                        <div className="appoitment-img">
-                                                            <img src="/images/op.jpeg" />
-                                                        </div>
-                                                        <h5 className="card-title">{serv.name}</h5>
-                                                        <p className="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                                        <a href={`/appointment/${open}/${index}`} className="btn btn-success" style={{ padding: "1rem .5rem " }}>Make Appointment</a>
+                                            <div className="bok-ser">
+                                                <div className="bok-header">
+                                                    <div className="bok-icon"><LiaGetPocket /></div>
+                                                    <div className="status">
+                                                        <p style={{ fontWeight: "bold" }}>Status</p>
+                                                        <p className="stas">Available</p>
                                                     </div>
                                                 </div>
+                                                <div className="title">
+
+                                                    <h6>{serv.name}</h6>
+                                                </div>
+                                                <div className="cetg">
+                                                    <p style={{ fontWeight: "meduim" }}>Cetegory:</p>
+                                                    <p className="cet">{services[0].name}</p>
+                                                </div>
+                                                <button className="btn serv-btn">Make Appointment</button>
                                             </div>
+
 
                                         ))}
                                     </div>
+
                                     <div className="pagination">
                                         <div></div>
                                         <Pagination

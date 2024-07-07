@@ -1,7 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 const ShortAbout = () => {
     const setting = {
-        src: "/images/video.mp4",
+        src: "/images/video3.mp4",
         width: "550",
         height: "560",
         controls: true,
@@ -24,6 +24,7 @@ const ShortAbout = () => {
                                 width={setting.width}
                                 height={setting.height}
                                 autoPlay={true} muted={true} playsInline={true} loop={true}
+                                style={{ borderRadius: "12px" }}
                             >
                                 <source src={setting.src} type="video/mp4" />
                                 Your browser does not support the video tag.

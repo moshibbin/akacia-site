@@ -60,7 +60,7 @@ const Page = () => {
                             <h4>Downloads</h4>
                             <hr />
                             <div className="contact-title">
-                                <a target="_blank" href="https://drive.google.com/file/d/1h-8lnE22aLlzBGstnvKQqfy181g_up-G/view?usp=sharing">
+                                <a target="_blank" href="https://drive.google.com/file/d/15AEJUuS534OVBucPH0tHsGAGGBKy9ZYR/view?usp=sharing">
 
                                     <div className="alert alert-success" role="alert">
                                         <img src="/images/002-pdf.svg" className="img-fluid" alt="#" />
@@ -80,7 +80,7 @@ const Page = () => {
                     <div className="col-md-12 col-lg-8">
                         <div className="service-detail_wrap">
                             <div className="service-detail_img">
-                                <img src={services[0].image} className="img-fluid" alt="#" />
+                                {/* <img src={services[0].image} className="img-fluid" alt="#" /> */}
                                 <h2>{services[0].name}</h2>
                                 <p>{services[0].description}</p>
 

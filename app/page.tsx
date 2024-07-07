@@ -18,11 +18,10 @@ import Counter from "./components/counter";
 import Footer from "./components/footer";
 import { servicesList } from "./data/services";
 import ReactWhatsapp from "react-whatsapp";
-import { getServices } from "./sanity/sanity-utils";
+
 
 export default async function Home() {
-  const services = await getServices();
-  console.log("services")
+
   return (
     <>
 
@@ -42,9 +41,9 @@ export default async function Home() {
       <ShortAbout />
       <Satisfaction />
       <Booking2 />
-      <Testimonail />
+      {/* <Testimonail /> */}
       <Conculting />
-      <Blogs />
+      {/* <Blogs /> */}
 
 
 
