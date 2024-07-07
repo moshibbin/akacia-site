@@ -125,7 +125,7 @@ const Appointment = () => {
 
                                     <div className="Booking-serv">
                                         {currentItems.map((serv, index) => (
-                                            <div className="bok-ser">
+                                            <div className="bok-ser" key={index}>
                                                 <div className="bok-header">
                                                     <div className="bok-icon"><LiaGetPocket /></div>
                                                     <div className="status">
