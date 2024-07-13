@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FaArrowRight, FaCheck, FaCheckDouble, FaClipboardCheck, FaEnvelope, FaEye, FaMap, FaPhoneAlt } from "react-icons/fa";
 import { IoIosArrowForward, IoIosArrowDown } from "react-icons/io";
 import { FaLocationPin } from "react-icons/fa6";
-import { servicesList } from "../data/services2";
+import { servicesList } from "../data/services";
 import Link from "next/link";
 import services from "./services2";
 import { useState } from "react";

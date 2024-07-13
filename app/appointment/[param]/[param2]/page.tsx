@@ -5,7 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import SecondHero from "../../../components/seconderHero";
 import { useParams } from "next/navigation";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { servicesList } from "../../../data/services2";
+import { servicesList } from "../../../data/services";
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';

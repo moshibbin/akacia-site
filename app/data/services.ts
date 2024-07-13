@@ -3,93 +3,174 @@ interface ServicesType {
     name: string,
     description: string,
     image: string,
-    icon: string,
-    icon2: string,
     bg: string,
-    servicesInclude: { name: string, description: string, icon: string }[]
+    servicesInclude: { name: string, description: string }[]
 }
 export const servicesList: ServicesType[] = [
     {
-        id: 1, name: " Skin Treatments",
+        id: 1, name: "Hair Treatment",
         description: "Our skin treatments aim to rejuvenate and enhance our client skin's natural beauty, addressing a variety of concerns with precision and care.",
 
         image: "/images/blog-img.jpg",
-        icon: "/images/008-implant.svg",
-        icon2: "/images/service-icon1.png",
+
         bg: "/images/services-bg1.png",
-        servicesInclude: [{ name: "Implant Dentistry", description: "", icon: "/images/008-implant.svg" },
-        { name: "Skin Analysis", description: "", icon: "/images/008-implant.svg" },
-        { name: "Pigmentation Treatment", description: "", icon: "/images/008-implant.svg" },
-        { name: "Carbon Peel Procedures", description: "", icon: "/images/008-implant.svg" },
-        { name: "Chemical Peeling ", description: "", icon: "/images/008-implant.svg" },
-        { name: "Microneedling", description: "", icon: "/images/008-implant.svg" },
-        { name: "PRP Treatments", description: "", icon: "/images/008-implant.svg" },
-        { name: "Laser Co2 ", description: "", icon: "/images/008-implant.svg" },
-        { name: "Mesotherapy TreatmenT ", description: "", icon: "/images/008-implant.svg" },
-        { name: "Acne and Scar Treatment ", description: "", icon: "/images/008-implant.svg" },
+        servicesInclude: [
+            { name: "All Face Procedure", description: "" },
+            { name: "Arm To Elbow Procedure", description: "" },
+            { name: "Axilla (Armpits) Procedure", description: "" },
+            { name: "Back (Full) Procedure", description: "" },
+            { name: "Back Of The Foot Procedure", description: "" },
+            { name: "Belly Line White Procedure", description: "" },
+            { name: "Between Eye Brows Procedure", description: "" },
+            { name: "Buttock Procedure", description: "" },
+            { name: "Calf Including Knees Procedure", description: "" },
+            { name: "Cheeks Procedure", description: "" },
+            { name: "Chest Procedure", description: "" },
+            { name: "Chin Procedure", description: "" },
+            { name: "Deep Bikini Procedure", description: "" },
+            { name: "Ears Procedures", description: "" },
+            { name: "Full Legs (Including Feet) Procedure", description: "" },
+            { name: "Glands Mamilar Procedure", description: "" },
+            { name: "Laser Hair Removal", description: "" },
+            { name: "Temples Procedure", description: "" },
+            { name: "Toes Of Foot Procedure", description: "" },
+            { name: "Upper Lip Procedure", description: "" },
+            { name: "Waist Procedure", description: "" }
         ]
 
     },
     {
-        id: 2, name: " Hair Treatments",
+        id: 2, name: " Injections",
         description: "Dedicated to improving hair health and appearance, our hair treatments offer solutions for thinning, loss, and scalp conditions.",
         image: "/images/blog-img.jpg",
-        icon: "/images/008-implant.svg",
-        icon2: "/images/service-icon1.png",
+
         bg: "/images/services-bg1.png",
         servicesInclude: [
-            { name: "PRP Scalp", description: "", icon: "/images/008-implant.svg" },
-            { name: "Hair Growth", description: "", icon: "/images/008-implant.svg" },
-            { name: "Mesotherapy Treatments for Scalp", description: "", icon: "/images/008-implant.svg" },
+            { name: "Between The Eyebrow Botox", description: "" },
+            { name: "Botox Full Face", description: "" },
+            { name: "Botox gummy smile", description: "" },
+            { name: "Colladew", description: "" },
+            { name: "Eyes Botox", description: "" },
+            { name: "Forehead And Brow Botox", description: "" },
+            { name: "Hyaldew All Filler Syringe", description: "" },
+            { name: "Hyperhidrosis One Area", description: "" },
+            { name: "Lipolitics Injection", description: "" },
+            { name: "Mesotherapy Eyes", description: "" },
+            { name: "Mesotherapy Face", description: "" },
+            { name: "Pdo Thread Lift Procedure", description: "" },
+            { name: "Prp Face", description: "" },
+            { name: "Prp hands", description: "" },
+            { name: "UltraHilo", description: "" },
+            { name: "Mesotherapy Lips", description: "" }
         ]
 
     },
     {
-        id: 3, name: "Laser Procedures",
+        id: 3, name: "Peeling",
         description: "Utilizing advanced laser technology, we provide precise treatments for hair removal, skin resurfacing, and more.",
         image: "/images/blog-img.jpg",
-        icon: "/images/008-implant.svg",
-        icon2: "/images/service-icon1.png",
+
         bg: "/images/services-bg1.png",
         servicesInclude: [
-            { name: " Laser Hair Removal", description: "", icon: "/images/008-implant.svg" },
-            { name: "IPL", description: "", icon: "/images/008-implant.svg" },
-            { name: "Tattoo Removal", description: "", icon: "/images/008-implant.svg" },
-            { name: "Laser Co2 for scars", description: "", icon: "/images/008-implant.svg" },
-            { name: "Stretch mark", description: "", icon: "/images/008-implant.svg" },
-            { name: "Pigmentation Removal Laser", description: "", icon: "/images/008-implant.svg" },
-            { name: "Tattoo Removal", description: "", icon: "/images/008-implant.svg" },
+            { name: "Carbon Peel Procedure", description: "" },
+            { name: "Carbon Peeling Fingers", description: "" },
+            { name: "Chemical Peeling", description: "" },
+            { name: "Diamond Peeling Procedure", description: "" },
+            { name: "Lips Carbon Peeling", description: "" }
         ]
 
     },
     {
-        id: 4, name: "Aesthetic Enhancements",
+        id: 4, name: "Skin Care",
         description: "Enhancing natural beauty with our range of aesthetic services designed for subtle yet impactful results.",
         image: "/images/blog-img.jpg",
-        icon: "/images/008-implant.svg",
-        icon2: "/images/service-icon1.png",
+
         bg: "/images/services-bg1.png",
         servicesInclude: [
-            { name: "Botox", description: "", icon: "/images/008-implant.svg" },
-            { name: "Filler", description: "", icon: "/images/008-implant.svg" },
-            { name: "PDO Thread Lift Procedure", description: "", icon: "/images/008-implant.svg" },
+            { name: "Care For Problem Skin", description: "" },
+            { name: "Cooling Face Mask", description: "" },
+            { name: "DMK treatment", description: "" },
+            { name: "Hydrafacial Treatment", description: "" },
+            { name: "Microneedling Treatment Face", description: "" },
+            { name: "Rf Lifting", description: "" },
+            { name: "Skin Analysis", description: "" }
         ]
 
     },
     {
-        id: 5, name: "Wellness and Body Treatments",
+        id: 5, name: "Vitamins",
         description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
         image: "/images/blog-img.jpg",
-        icon: "/images/008-implant.svg",
-        icon2: "/images/service-icon1.png",
+
         bg: "/images/services-bg1.png",
         servicesInclude: [
-            { name: "Glutathione Infusion", description: "", icon: "/images/008-implant.svg" },
-            { name: "MultVitamine Drip", description: "", icon: "/images/008-implant.svg" },
-            { name: "Pressotherapy", description: "", icon: "/images/008-implant.svg" },
-            { name: "Massage services", description: "", icon: "/images/008-implant.svg" },
-            { name: "Cryolipolysis for targeted fat reduction", description: "", icon: "/images/008-implant.svg" },
+            { name: "Cindella Infusion Per Course 10 Procedures", description: "" },
+            { name: "Cindella Infusion Per Course 5 Procedures", description: "" },
+            { name: "Cindella Infusion Per Session", description: "" },
+            { name: "MultVita Drip", description: "" }
         ]
 
-    }
+    },
+    {
+        id: 6, name: "Fat Loss",
+        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        image: "/images/blog-img.jpg",
+
+        bg: "/images/services-bg1.png",
+        servicesInclude: [
+            { name: "Cryolipolysis All Body", description: "" },
+            { name: "Cryolipolysis Back", description: "" },
+            { name: "Cryolipolysis Chin", description: "" },
+            { name: "Cryolipolysis Hands", description: "" },
+            { name: "Cryolipolysis Hips", description: "" },
+            { name: "Cryolipolysis Hump", description: "" },
+            { name: "Cryolipolysis Stomach", description: "" },
+            { name: "Cryolopolysis Buttocks", description: "" },
+            { name: "Pressotherapy", description: "" }
+        ]
+
+    },
+    {
+        id: 7, name: "Laser Treatment",
+        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        image: "/images/blog-img.jpg",
+
+        bg: "/images/services-bg1.png",
+        servicesInclude: [
+            { name: "Ipl Vessels Removal", description: "" },
+            { name: "Laser CO2 Scars", description: "" },
+            { name: "Laser Hair Growth", description: "" },
+            { name: "Laser Ipl", description: "" },
+            { name: "Laser Stretch Marks", description: "" },
+            { name: "Pigmentation Removal Laser", description: "" },
+            { name: "Tattoo Removal Procedure", description: "" }
+        ]
+
+    },
+    {
+        id: 8, name: "Scalp Treatment",
+        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        image: "/images/blog-img.jpg",
+
+        bg: "/images/services-bg1.png",
+        servicesInclude: [
+            { name: "Exomsome Stem Cell Procedure", description: "" },
+            { name: "Mesotherapy Scalp", description: "" },
+            { name: "Prp Scalp", description: "" }
+        ]
+
+    },
+    {
+        id: 9, name: "Surgery",
+        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        image: "/images/blog-img.jpg",
+
+        bg: "/images/services-bg1.png",
+        servicesInclude: [
+            { name: "Removal Of Molluscum Contagiosum", description: "" },
+            { name: "Abscess Removal", description: "" },
+            { name: "Removal Of Warts", description: "" }
+        ]
+
+    },
 ]

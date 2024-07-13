@@ -5101,7 +5101,7 @@ URL: https://themeforest.net/user/surjithctly/
 
 .navbar-light .navbar-nav .nav-link {
   font-weight: 500;
-  font-size: 13px;
+  font-size: 15px;
   padding: 12px 22px;
   color: black;
 }
@@ -5859,7 +5859,7 @@ a:focus {
 }
 
 .banner1 {
-  background: url(/images/hero.webp) center no-repeat;
+  background: url(/images/hero2.jpg) center no-repeat;
   background-size: cover;
 }
 

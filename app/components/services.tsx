@@ -18,7 +18,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div className="row">
-                    {servicesList.map((services, index) => (
+                    {servicesList.slice(0, 6).map((services, index) => (
                         <div className="col-md-4" key={services.id}>
                             <div className={index % 2 === 0 ? `service-block yellow` : "service-block  blue"} style={{ color: "white" }}>
                                 {/* <img src={services.icon2} alt="#" /> */}
