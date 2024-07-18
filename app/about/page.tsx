@@ -22,12 +22,12 @@ const Page = () => {
         <ShortAbout />
         <Conculting />
         <div style={{ padding: "5rem 0" }}>
-            <Testimonail />
+{/*             <Testimonail /> */}
         </div>
         <div className="container container-custom" style={{ padding: "3rem 0" }} >
 
 
-            <Brand />
+{/*             <Brand /> */}
 
         </div>
     </>);
