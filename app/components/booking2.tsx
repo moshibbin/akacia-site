@@ -33,7 +33,7 @@ const Booking2 = () => {
     // const [service, setServices] = useState(false)
 
     const WHATSAPP_API_URL = 'https://api.whatsapp.com/send';
-    const phoneNumber = '+252653140475'; // Replace with actual phone number
+    const phoneNumber = '+252636666782'; // Replace with actual phone number
     const message = ` Client Name: ${data.name} Client Number: ${data.phone}  Client City: ${data.city} Appoitment Date: ${data.date} Select Services: ${data.service}`;
     const handleClose = () => {
         setShow(false);
