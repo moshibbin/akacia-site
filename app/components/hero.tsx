@@ -4,8 +4,8 @@ const Hero = () => {
     return (<>   <div className="banner-slider" >
         <div className="banner1">
             <div className="container " style={{ padding: "3rem 0" }}>
-                <div className="row" style={{ display: "flex" }}>
-                    <div className="col-md-9 col-lg-5" >
+                <div className="rodw" style={{ display: "flex" }}>
+                    <div className="col-dmd-9 codl-lg-5" >
 
                         <div className="main-title main-title-style2 ">
                             <span>We are here for you</span>

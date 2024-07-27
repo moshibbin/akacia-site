@@ -70,7 +70,7 @@ const Booking2 = () => {
 
                     <div className="col-md-4">
                         <div className="service-thumbnail services-top-icon d-flex flex-fill">
-                            <img src="images/icon-6.png" className="img-fluid" alt="#" />
+                            <img src="images/injection.png" className="img-fluid" alt="#" />
                             <div className="service-thumbnail_text align-items-center">
                                 <h4><span style={{ color: "#1382BB" }}>Painless</span> Treatments</h4>
                                 <p>Hair restoration, cosmetology</p>
@@ -80,7 +80,7 @@ const Booking2 = () => {
 
                     <div className="col-md-4">
                         <div className="service-thumbnail services-top-icon d-flex flex-fill">
-                            <img src="images/icon7.png" className="img-fluid" alt="#" />
+                            <img src="images/dentist-chair.png" className="img-fluid" alt="#" />
                             <div className="service-thumbnail_text">
                                 <h4><span style={{ color: "#1382BB" }}>Top</span> Clinic Equipment</h4>
                                 <p>Hair restoration, cosmetology</p>

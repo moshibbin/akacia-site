@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FaChevronRight } from "react-icons/fa";
 const ShortAbout = () => {
     const setting = {
@@ -25,6 +26,7 @@ const ShortAbout = () => {
                                 height={setting.height}
                                 autoPlay={true} muted={true} playsInline={true} loop={true}
                                 style={{ borderRadius: "12px" }}
+                                className="img-fluid w-100"
                             >
                                 <source src={setting.src} type="video/mp4" />
                                 Your browser does not support the video tag.
@@ -47,14 +49,15 @@ const ShortAbout = () => {
                             <p>
                                 Our expert team uses the latest techniques and technologies to deliver outstanding results. We ensure comfort, precision, and continuous support, reflecting our commitment to your beauty and well-being.
                             </p>
-                            <hr />
-                            <div className="newsletter-subscribe">
+                            {/* <hr /> */}
+                            <Link href="/appoitment" className="btn btn-primary" style={{ color: "white", textDecoration: "none" }} >MAKE APPOINTMENT</Link>
+                            {/* <div className="newsletter-subscribe">
                                 <h4>Subscribe to our Newsletter</h4>
                                 <div className="newsletter-subscribe_form">
                                     <input type="text" className="form-control" placeholder="Enter Your Email" />
                                     <div className="a"><i className=""><FaChevronRight /></i></div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

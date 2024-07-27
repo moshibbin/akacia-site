@@ -18,6 +18,7 @@ import Counter from "./components/counter";
 import Footer from "./components/footer";
 import { servicesList } from "./data/services";
 import ReactWhatsapp from "react-whatsapp";
+import Hero2 from "./components/hero2";
 
 
 export default async function Home() {
@@ -26,7 +27,7 @@ export default async function Home() {
     <>
 
 
-      <Hero />
+      <Hero2 />
       <section className="about-section">
         <div className="container container-custom">
           <div className="row">
@@ -41,9 +42,8 @@ export default async function Home() {
       <ShortAbout />
       <Satisfaction />
       <Booking2 />
-      {/* <Testimonail /> */}
+
       <Conculting />
-      {/* <Blogs /> */}
 
 
 

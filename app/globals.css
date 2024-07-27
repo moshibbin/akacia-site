@@ -5308,7 +5308,7 @@ URL: https://themeforest.net/user/surjithctly/
 .navbar-light .navbar-toggler {
   border: none;
   position: absolute;
-  right: 0;
+  right: 3.5rem;
   top: 0;
   margin: -73px 0 0;
 }
@@ -5514,6 +5514,7 @@ textarea {
 body {
   color: #2c2e31;
   font-family: "Roboto", sans-serif;
+
 }
 
 h1 {
@@ -5682,7 +5683,7 @@ a:focus {
     left: 14px;
     width: 0;
     height: 2px;
-    background-color: #5bc198;
+    background-color: var(--primary-color);
     -webkit-animation: animWidth 1s ease 0s 1 normal forwards;
     animation: animWidth 1s ease 0s 1 normal forwards;
   }
@@ -5855,12 +5856,13 @@ a:focus {
 }
 
 .banner-slider .slick-dots li.slick-active button:before {
-  color: #5bc198;
+  color: var(--primary-color);
 }
 
 .banner1 {
   background: url(/images/hero2.jpg) center no-repeat;
   background-size: cover;
+  /* background-color: red; */
 }
 
 .banner1:focus {
@@ -10226,4 +10228,16 @@ SERVICE DETAIL
     grid-template-columns: repeat(1, auto);
     ;
   }
+}
+
+.hero2 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+
+
+.custom-container {
+  max-width: 1400px;
+  margin: 0 auto;
 }
