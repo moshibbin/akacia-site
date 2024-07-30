@@ -41,7 +41,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 2, name: " Injections",
-        description: "Dedicated to improving hair health and appearance, our hair treatments offer solutions for thinning, loss, and scalp conditions.",
+          description: "Anticipating amazing injectable aesthetic treatment products.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
