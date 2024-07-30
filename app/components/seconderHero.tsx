@@ -3,8 +3,9 @@ import Link from "next/link";
 interface Props {
     nextPage: string
     description: string
+    font?: boolean
 }
-const SecondHero = ({ nextPage, description }: Props) => {
+const SecondHero = ({ nextPage, description, font }: Props) => {
 
     return (<>
         <section className="space sub-header " style={{ marginTop: "6rem" }}  >
@@ -19,7 +20,7 @@ const SecondHero = ({ nextPage, description }: Props) => {
                     </div>
                     <div className="col-md-6">
                         <div className="sub-header_main">
-                            <h2>{nextPage}</h2>
+                            <h2 style={font ? { fontSize: "50px" } : {}}>{nextPage}</h2>
                         </div>
                     </div>
                 </div>
