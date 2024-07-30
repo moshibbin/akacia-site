@@ -22,7 +22,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 2, name: " Injections",
-        description: "Anticipating amazing injectable aesthetic treatment product.",
+        description: "Anticipating amazing injectable aesthetic treatment products.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
