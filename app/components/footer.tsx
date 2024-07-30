@@ -20,10 +20,10 @@ const Footer = () => {
                             <p>
                                 Discover a world of beauty and confidence with our premier cosmetology and hair clinic. Experience personalized care, expert services, and top-quality products tailored to meet your unique needs.
                             </p>
-                            <Link style={{ textDecoration: "none" }} href="tel:31234567890">
+                            <Link style={{ textDecoration: "none" }} href="tel:+252636666782">
                                 <h4><i ><FaPhoneAlt /></i>+252636666782</h4>
                             </Link>
-                            <Link style={{ textDecoration: "none" }} href="mailto:info@mededin.com">
+                            <Link style={{ textDecoration: "none" }} href="mailto:info@akaciahrg.com">
                                 <h4><i><IoMailUnread /></i>Info@akaciahrg.com
                                 </h4>
                             </Link>
@@ -57,16 +57,9 @@ const Footer = () => {
                     <div className="col-sm-6 col-md-4 col-lg-2">
                         <div className="foot-link-box">
                             <h4>Our Services</h4>
-                            <ul>
-                                {servicesList.slice(0, 5).map(serv => (
-                                    <li key={serv.id}>
-                                        <Link style={{ textDecoration: "none" }} href={`/services/${serv.id}`}><i ><FaAngleDoubleRight /></i>{serv.name}</Link>
-                                    </li>
-                                ))}
 
-                            </ul>
                             <ul>
-                                {servicesList.slice(0, 5).map(serv => (
+                                {servicesList.slice(0, 6).map(serv => (
                                     <li key={serv.id}>
                                         <Link style={{ textDecoration: "none" }} href={`/services/${serv.id}`}><i ><FaAngleDoubleRight /></i>{serv.name}</Link>
                                     </li>

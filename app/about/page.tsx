@@ -21,15 +21,12 @@ const Page = () => {
         <Info />
         <ShortAbout />
         <Conculting />
-        <div style={{ padding: "5rem 0" }}>
-{/*             <Testimonail /> */}
-        </div>
-        <div className="container container-custom" style={{ padding: "3rem 0" }} >
-
-
-{/*             <Brand /> */}
-
-        </div>
+        {/* <div style={{ padding: "5rem 0" }}>
+            <Testimonail />
+        </div> */}
+        {/* <div className="container container-custom" style={{ padding: "3rem 0" }} >
+            <Brand />
+        </div> */}
     </>);
 }
 

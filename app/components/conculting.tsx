@@ -4,10 +4,13 @@ import Link from "next/link";
 
 const Conculting = () => {
     return (<>
-        <section className="bg-img3" style={{ marginBottom: "6rem" }}>
-            <div className="container container-custom">
-                <div className="row">
-                    <div className="col-lg-5 offset-lg-7">
+        <section className="bg-img3" >
+            <div className="container ">
+                <div className="rsow cunsulting">
+                    <div className=" clumn1">
+                        <img style={{ width: "100%", height: "100%" }} src="/images/nurse-hijab.png" alt="" />
+                    </div>
+                    <div className="">
                         <div className="consultant-content">
                             <h2>We Believe in a Healthier You</h2>
                             <p>

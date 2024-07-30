@@ -8,6 +8,7 @@ import { BiLogoInstagramAlt } from "react-icons/bi";
 import { AiFillTikTok } from "react-icons/ai";
 import { PiShoppingCartFill } from "react-icons/pi";
 import { IoMdMenu } from "react-icons/io";
+import { set } from "sanity";
 const Header = () => {
     const menu = [
         { id: 1, label: "Home", href: "/" },
@@ -35,15 +36,20 @@ const Header = () => {
                                                 <img src="/images/mail-icon.png" alt="#" />
                                                 <div>
                                                     <span>Mail us</span>
-                                                    <h4>
-                                                        Info@akaciahrg.com</h4>
+                                                    <Link style={{ textDecoration: "none", color: "black" }} href="mailto:info@akaciahrg.com">
+                                                        <h4>Info@akaciahrg.com
+                                                        </h4>
+                                                    </Link>
+
                                                 </div>
                                             </li>
                                             <li>
                                                 <img src="/images/call-icon.png" alt="#" />
                                                 <div>
                                                     <span>Toll Free</span>
-                                                    <h4>+252636666782</h4>
+                                                    <Link style={{ textDecoration: "none", color: "black" }} href="tel:+252636666782">
+                                                        <h4>+252636666782</h4>
+                                                    </Link>
                                                 </div>
                                             </li>
                                             <li className="appointment-btn">
@@ -65,7 +71,7 @@ const Header = () => {
                         <div className="col-md-12">
 
                             <nav className="navbar navbar-expand-lg navbar-light">
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <button style={{ color: "white" }} className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span className="navbar-toggler-icon" onClick={() => setOpen(open ? false : true)} style={{ marginTop: "1.5rem" }}></span>
                                 </button>
                                 <div className={open ? "collapse navbar-collapse show " : "collapse navbar-collapse flex "} >
@@ -73,9 +79,14 @@ const Header = () => {
                                         {menu.map(item => (
 
                                             <li className="nav-item " key={item.id}>
-                                                <Link className="nav-link " href={item.href} role="button" >
-                                                    {item.label}
-                                                </Link>
+                                                {
+                                                    open ? <Link className="nav-link " href={item.href} role="button" onClick={() => setTimeout(() => setOpen(false), 500)} >
+                                                        {item.label}
+                                                    </Link> : <Link className="nav-link " href={item.href} role="button" >
+                                                        {item.label}
+                                                    </Link>
+                                                }
+
 
                                             </li>
                                         ))}

@@ -5862,7 +5862,14 @@ a:focus {
 .banner1 {
   background: url(/images/hero2.jpg) center no-repeat;
   background-size: cover;
-  /* background-color: red; */
+
+
+}
+
+@media (max-width: 1000px) {
+  .banner1 {
+    background-image: none;
+  }
 }
 
 .banner1:focus {
@@ -7810,7 +7817,7 @@ ABOUT
 }
 
 .sub-header_content p {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 300;
   position: relative;
   display: inline-block;
@@ -7837,7 +7844,7 @@ ABOUT
 }
 
 .sub-header_content span {
-  font-size: 12px;
+  font-size: 15px;
   opacity: 0.9;
 }
 
@@ -7849,7 +7856,7 @@ ABOUT
   position: relative;
   font-size: 42px;
   color: #fff;
-  opacity: 0.1;
+  opacity: .6;
   margin: 20px 0 0;
   text-align: left;
 }
@@ -7872,6 +7879,7 @@ ABOUT
 
 .sub-header_main h2:before {
   position: absolute;
+  opacity: 0.1;
   content: url(/images/sub-header-icon.png);
   left: 50%;
   top: 70%;
@@ -10240,4 +10248,30 @@ SERVICE DETAIL
 .custom-container {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.cunsulting {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+@media (max-width: 1000px) {
+  .clumn1 {
+    display: none;
+  }
+}
+
+.clumn1 {
+  grid-column: span 2;
+}
+
+.hero-P {
+  padding: 5rem 0;
+}
+
+@media (max-width: 1000px) {
+  .hero-P {
+    padding-top: 4rem;
+    padding-bottom: 0;
+  }
 }

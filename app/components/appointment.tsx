@@ -141,7 +141,7 @@ const Appointment = () => {
                                                     <p style={{ fontWeight: "meduim" }}>Cetegory:</p>
                                                     <p className="cet">{services[0].name}</p>
                                                 </div>
-                                                <button className="btn serv-btn"><Link href={`appointment/${open}/${index}`} style={{textDecoration:"none",color:"white"}}>Make Appointment</Link></button>
+                                                <button className="btn serv-btn"><Link href={`appointment/${open}/${index}`} style={{ textDecoration: "none", color: "white" }}>Make Appointment</Link></button>
                                             </div>
 
 

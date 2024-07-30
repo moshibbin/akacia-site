@@ -7,7 +7,7 @@ const Services = () => {
 
 
     return (<>
-        <section className="space light">
+        <section className="space light" style={{ padding: "2rem 0" }}>
             <div className="container container-custom">
                 <div className="row">
                     <div className="col-md-12">

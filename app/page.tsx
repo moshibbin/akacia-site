@@ -42,7 +42,6 @@ export default async function Home() {
       <ShortAbout />
       <Satisfaction />
       <Booking2 />
-
       <Conculting />
 
 

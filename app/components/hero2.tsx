@@ -47,7 +47,7 @@ const Hero2 = () => {
         <div className="banner-slider" >
             <div className="banner1">
 
-                <div className="custom-container px-4 " style={{ padding: "5rem 0" }}>
+                <div className="custom-container px-4 hero-P">
                     <div className="row" >
                         <div className="col-sm-12  col-lg-5">
                             <div className="main-title main-title-style2 ">
@@ -61,7 +61,7 @@ const Hero2 = () => {
                                 <Link href="/services" className="btn btn-dark btn-blue ">Discover Our Services</Link>
                             </div>
                         </div>
-                        <div className="col-md-10 col-lg-7 d-none d-md-block" style={{ paddingTop: "1.5rem " }}>   <HeroImages /></div>
+                        <div className="col-md-10 col-lg-7 " style={{ paddingTop: "1.5rem " }}>   <HeroImages /></div>
                     </div>
 
                 </div>

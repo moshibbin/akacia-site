@@ -9,7 +9,7 @@ interface ServicesType {
 export const servicesList: ServicesType[] = [
     {
         id: 1, name: "Hair Treatment",
-        description: "Our skin treatments aim to rejuvenate and enhance our client skin's natural beauty, addressing a variety of concerns with precision and care.",
+        description: "Utilizing advanced laser technology, we provide precise treatments for hair removal.",
 
         image: "/images/blog-img.jpg",
 
@@ -44,7 +44,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 3, name: "Peeling",
-        description: "Utilizing advanced laser technology, we provide precise treatments for hair removal, skin resurfacing, and more.",
+        description: "Improving the texture of skin by exfoliating the dead skin and encouraging production of new cells and smoothing",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
@@ -59,7 +59,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 4, name: "Skin Care",
-        description: "Enhancing natural beauty with our range of aesthetic services designed for subtle yet impactful results.",
+        description: "Enhancing natural beauty with our range of aesthetic services designed for subtle yet impactful results",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
@@ -76,7 +76,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 5, name: "Vitamins",
-        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        description: "Providing you with the required Health essentials that your body need is our top priority.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
@@ -103,7 +103,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 7, name: "Laser Treatment",
-        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        description: "Utilizing advanced laser technology, we provide precise treatments for skin resurfacing and much more.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
@@ -120,7 +120,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 8, name: "Scalp Treatment",
-        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        description: "Dedicated to improving hair health and appearance, our hair treatments offer solutions for thinning, loss, and scalp conditions.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
@@ -133,7 +133,7 @@ export const servicesList: ServicesType[] = [
     },
     {
         id: 9, name: "Surgery",
-        description: "Promoting holistic well-being, our wellness and body treatments include therapies for detoxification, revitalization, and body contouring.",
+        description: "Advancing Minimum surgical skin procedures required for health and safety.",
         image: "/images/blog-img.jpg",
 
         bg: "/images/services-bg1.png",
