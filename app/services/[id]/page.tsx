@@ -5,6 +5,7 @@ import { FaCheck, FaCheckDouble, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationPin } from "react-icons/fa6";
 import { servicesList } from "../../data/services2";
 import { IoIosArrowDown, IoIosArrowForward } from "react-icons/io";
+import SecondHero from "../../components/seconderHero";
 
 const Page = () => {
     const params = useParams<{ id: string }>()
@@ -12,6 +13,7 @@ const Page = () => {
     const services = servicesList.filter(serv => serv.id === parseInt(params.id))
     console.log(services)
     return (<>
+        <SecondHero nextPage={services[0].name} description={"Explore the wide range of treatments and services we offer to enhance your beauty and confidence."} />
         <section className="light">
             <div className="container container-custom">
                 <div className="row">
